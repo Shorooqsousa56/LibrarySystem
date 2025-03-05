@@ -31,7 +31,7 @@ public class Library {
 
         for (Book b : books) {
 
-            if (b.getTitle().equals(title)) {
+            if (b.getTitle().equalsIgnoreCase(title)) {
                 System.out.println("Book ID :" + b.getId() + " " + "book name :" + b.getTitle() + " " + "Author of the book :" + b.getAuthor() + " " + "Publication year :" + b.getYear());
                 foundBook = 1;
             }
